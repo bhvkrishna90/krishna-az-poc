@@ -13,7 +13,7 @@ RUN /usr/local/bin/install-plugins.sh slack
 # Artifacts
 RUN /usr/local/bin/install-plugins.sh htmlpublisher
 
-# User Interface
+# User Interface Plugins
 RUN /usr/local/bin/install-plugins.sh greenballs
 RUN /usr/local/bin/install-plugins.sh simple-theme-plugin
 
