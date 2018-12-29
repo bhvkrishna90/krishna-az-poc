@@ -1,6 +1,6 @@
 #Docker File for Jenkins
 
-FROM jenkins/jenkins:latest
+FROM jenkins/jenkins:lts
 
 # Distributed Builds plugins
 RUN /usr/local/bin/install-plugins.sh ssh-slaves
