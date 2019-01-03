@@ -15,16 +15,16 @@ RUN /usr/local/bin/install-plugins.sh htmlpublisher
 RUN /usr/local/bin/install-plugins.sh greenballs simple-theme-plugin
 
 # Scaling
-RUN /usr/local/bin/install-plugins.sh kubernetes kubernetes-credentials
+RUN /usr/local/bin/install-plugins.sh kubernetes kubernetes-credentials kubernetes-cli
 
 #pipeline 
-RUN /usr/local/bin/install-plugins.sh pipeline-build-step build-pipeline-plugin pipeline-github pipeline-editor pipeline-stage-view
+RUN /usr/local/bin/install-plugins.sh build-pipeline-plugin pipeline-github pipeline-stage-view pipeline-build-step
 
 #Azure Plugins
 RUN /usr/local/bin/install-plugins.sh azure-acs azure-ad azure-app-service azure-batch-parallel azure-credentials azure-function azure-publishersettings-credentials
 
 #Scrpting Plugins
-#RUN /usr/local/bin/install-plugins.sh powershell
+RUN /usr/local/bin/install-plugins.sh powershell terraform
 
 # install Maven
 USER root
