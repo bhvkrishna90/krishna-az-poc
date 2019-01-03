@@ -24,7 +24,7 @@ RUN /usr/local/bin/install-plugins.sh pipeline-build-step build-pipeline-plugin 
 RUN /usr/local/bin/install-plugins.sh azure-acs azure-ad azure-app-service azure-batch-parallel azure-credentials azure-function azure-publishersettings-credentials
 
 #Scrpting Plugins
-RUN /usr/local/bin/install-plugins.sh powershell
+#RUN /usr/local/bin/install-plugins.sh powershell
 
 # install Maven
 USER root
